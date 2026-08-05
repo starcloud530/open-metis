@@ -1,7 +1,7 @@
 # Open Metis
 
 <p align="center">
-  <img src="docs/assets/open-metis-poster.webp" alt="Metis — CLI-driven agent · events first" width="800" />
+  <img src="docs/assets/open-metis-poster.webp" alt="Metis — CLI-driven agent · events first" width="100%" />
 </p>
 
 Fast, lightweight **open-source AI coding CLI**.  
