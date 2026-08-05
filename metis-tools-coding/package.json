@@ -1,0 +1,21 @@
+{
+  "name": "@metis/tools-coding",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "AI coding 域工具：read_file / write_file / run_command。不进 @metis/core。",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@metis/core": "workspace:*",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.10",
+    "typescript": "^5.8.2"
+  }
+}

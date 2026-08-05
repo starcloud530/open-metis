@@ -1,0 +1,10 @@
+{
+  "name": "@metis/protocol",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Metis NDJSON 事件协议 v1",
+  "exports": {
+    ".": "./src/index.ts"
+  }
+}

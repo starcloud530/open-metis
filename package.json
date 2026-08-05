@@ -1,0 +1,20 @@
+{
+  "name": "open-metis",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Open Metis — fast, lightweight open-source AI coding CLI",
+  "scripts": {
+    "build": "pnpm --filter @metis/cli build",
+    "test": "pnpm --filter @metis/core test && pnpm --filter @metis/os test",
+    "typecheck": "pnpm -r typecheck",
+    "metis": "./metis",
+    "install:global": "bash scripts/install-global.sh",
+    "bump:patch": "node scripts/bump-version.mjs patch",
+    "bump:minor": "node scripts/bump-version.mjs minor",
+    "bump:major": "node scripts/bump-version.mjs major"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "packageManager": "pnpm@9.15.0"
+}

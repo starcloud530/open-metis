@@ -1,0 +1,13 @@
+# Copy to <profile>.yaml and fill secrets, then:
+#   metis run "hello" --model <profile>
+#
+# Prefer env for open-source quickstart (no file needed):
+#   export METIS_API_KEY=sk-...
+#   export METIS_BASE_URL=https://api.openai.com/v1
+#   export METIS_MODEL=gpt-4o-mini
+
+example:
+  api_key: sk-your-key-here
+  base_url: https://api.openai.com/v1
+  model_id: gpt-4o-mini
+  temperature: 0.4

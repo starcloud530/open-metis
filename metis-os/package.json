@@ -1,0 +1,22 @@
+{
+  "name": "@metis/os",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "本地 OS 围栏：Seatbelt / Landlock（MVP 先透传 local，再上平台原语）",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@metis/tools-coding": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.10",
+    "typescript": "^5.8.2",
+    "vitest": "^3.0.9"
+  }
+}

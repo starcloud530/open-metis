@@ -1,0 +1,32 @@
+name: Feature / UX
+description: Idea, friction, or enhancement
+title: "[feat] "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem / friction
+      description: What were you trying to do?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposal
+      description: Optional — how you imagine it working
+    validations:
+      required: false
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - cli / REPL
+        - core loop
+        - tools-coding
+        - os fence
+        - docs
+        - other
+    validations:
+      required: true

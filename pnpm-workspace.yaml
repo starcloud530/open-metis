@@ -1,0 +1,7 @@
+packages:
+  - "metis-core"
+  - "metis-protocol"
+  - "metis-os"
+  - "metis-tools-coding"
+  - "metis-ui-ink"
+  - "metis-cli"

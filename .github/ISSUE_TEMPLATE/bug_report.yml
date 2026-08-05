@@ -1,0 +1,60 @@
+name: Bug report
+description: Something broken or unexpected
+title: "[bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for filing. Early users shape the product — please include a minimal repro.
+  - type: input
+    id: version
+    attributes:
+      label: metis version
+      description: Output of `metis --version` or `./metis --version`
+      placeholder: metis v0.1.0
+    validations:
+      required: true
+  - type: dropdown
+    id: os
+    attributes:
+      label: OS
+      options:
+        - macOS
+        - Linux
+        - Windows (WSL2)
+        - Other
+    validations:
+      required: true
+  - type: dropdown
+    id: backend
+    attributes:
+      label: METIS_EXEC_BACKEND
+      options:
+        - os (default)
+        - local
+        - unset / unknown
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: Repro steps
+      description: Exact commands (redact API keys)
+      placeholder: |
+        export METIS_API_KEY=...
+        ./metis run "..." --plain
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual
+    validations:
+      required: true

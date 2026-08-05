@@ -1,0 +1,38 @@
+{
+  "name": "@metis/cli",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Metis CLI：组装 core + tools-coding + os + ui-ink",
+  "bin": {
+    "metis": "./dist/main.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "start": "tsx src/main.ts",
+    "metis": "tsx src/main.ts",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "pnpm build"
+  },
+  "dependencies": {
+    "@metis/core": "workspace:*",
+    "@metis/os": "workspace:*",
+    "@metis/protocol": "workspace:*",
+    "@metis/tools-coding": "workspace:*",
+    "@metis/ui-ink": "workspace:*",
+    "ink": "^5.2.1",
+    "ink-spinner": "^5.0.0",
+    "react": "^18.3.1",
+    "yaml": "^2.9.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.10",
+    "@types/react": "^18.3.18",
+    "tsup": "^8.5.1",
+    "tsx": "^4.19.3",
+    "typescript": "^5.8.2"
+  }
+}

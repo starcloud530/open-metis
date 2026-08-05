@@ -1,0 +1,23 @@
+{
+  "name": "@metis/core",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Metis 通用 Agent 运行时：loop / tool / model / budget。零默认业务工具。",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@metis/protocol": "workspace:*",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.10",
+    "typescript": "^5.8.2",
+    "vitest": "^3.0.9"
+  }
+}

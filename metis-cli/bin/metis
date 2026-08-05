@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+# 全局安装用入口：解析 symlink 后定位 metis-cli（保留 node_modules 解析）
+set -euo pipefail
+SELF="${BASH_SOURCE[0]}"
+if [[ -L "$SELF" ]]; then
+  TARGET="$(readlink "$SELF")"
+  if [[ "$TARGET" != /* ]]; then
+    TARGET="$(cd "$(dirname "$SELF")" && pwd)/$TARGET"
+  fi
+  SELF="$TARGET"
+fi
+ROOT="$(cd "$(dirname "$SELF")/.." && pwd)"
+exec node "$ROOT/dist/main.js" "$@"

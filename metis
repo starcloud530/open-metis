@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# 仓库内一键入口：./metis "任务"   或   ./metis run "任务" --model xxx
+set -euo pipefail
+ROOT="$(cd "$(dirname "$0")" && pwd)"
+cd "$ROOT"
+exec pnpm --filter @metis/cli exec tsx "$ROOT/metis-cli/src/main.ts" "$@"

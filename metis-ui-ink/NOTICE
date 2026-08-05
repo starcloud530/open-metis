@@ -1,0 +1,10 @@
+Metis Ink UI includes patterns adapted from Google Gemini CLI
+(https://github.com/google-gemini/gemini-cli), licensed under Apache License 2.0.
+
+Copyright 2025 Google LLC
+Copyright 2026 Metis contributors
+
+Portions of the layout, tool-card, and approval UX patterns were adapted and
+rebranded. Gemini trademarks, logos, and ASCII art were NOT copied.
+
+SPDX-License-Identifier: Apache-2.0
